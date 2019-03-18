@@ -1,0 +1,22 @@
+app:
+  build: .
+  command: python3 /scripts/check_db.py
+  volumes:
+   - /tmp/scripts:/scripts
+  links:
+   - db
+  hostname: myappserver
+
+db:
+  hostname: mysqlserver
+  image: mysql:5.7
+  restart: always
+  environment:
+      MYSQL_DATABASE: 'db'
+      MYSQL_USER: 'user'
+      MYSQL_PASSWORD: 'password'
+      MYSQL_ROOT_PASSWORD: 'password'
+  ports:
+    - '3306:3306'
+  expose:
+    - '3306'
