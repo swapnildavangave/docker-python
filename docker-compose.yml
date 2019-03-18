@@ -5,8 +5,6 @@ app:
    - /tmp/scripts:/scripts
   links:
    - db
-  hostname: myappserver
-
 db:
   image: mysql:5.7
   restart: always
