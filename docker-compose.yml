@@ -8,7 +8,6 @@ app:
   hostname: myappserver
 
 db:
-  hostname: mysqlserver
   image: mysql:5.7
   restart: always
   environment:

@@ -2,7 +2,7 @@
 
 # from configuartions import db_configs
 import pymysql as pml
-db_configs = {'user':'user','password':'password','host':'mysqlserver','port':3306}
+db_configs = {'user':'user','password':'password','host':'db','port':3306}
 import time
 
 if __name__ == '__main__':
