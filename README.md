@@ -14,18 +14,19 @@ Steps:
     ```
     git clone https://github.com/swapnildavangave/docker-python.git
     ```
-2. Run docker-compose.
-    
-    ```
-    docker-compose up
-    ```
-
-3. Copy the scripts directory to your /tmp
+2. Copy the scripts directory to your /tmp
 
     ```
     cp -r scripts /tmp
     ```
+
+3. Run docker-compose.
+    
+    ```
+    docker-compose up
+    ```
 4. Observe the terminal for database details. Logs are located at.
 
-    ```/tmp/scripts/output.log
+    ```
+    /tmp/scripts/output.log
     ```
