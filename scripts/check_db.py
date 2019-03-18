@@ -7,6 +7,7 @@ import time
 
 if __name__ == '__main__':
 
+    time.sleep(60)
     while True:
         try:
             conn = pml.connect(host=db_configs['host'],user=db_configs['user']
