@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-from configuartions import db_configs
+# from configuartions import db_configs
 import pymysql as pml
 db_configs = {'user':'user','password':'password','host':'mysqlserver','port':3306}
 import time
